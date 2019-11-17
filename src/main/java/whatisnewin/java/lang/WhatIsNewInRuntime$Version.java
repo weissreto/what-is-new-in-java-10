@@ -15,6 +15,32 @@ import java.lang.Runtime.Version;
 public final class WhatIsNewInRuntime$Version
 {
   /**
+   * Example call to new method {@link Version#feature()}.
+   * @since 10
+   * @see Version#feature()
+   */
+  public int feature()
+  {
+    Version testee = $$$();
+
+    int result = testee.feature();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Version#interim()}.
+   * @since 10
+   * @see Version#interim()
+   */
+  public int interim()
+  {
+    Version testee = $$$();
+
+    int result = testee.interim();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link Version#update()}.
    * @since 10
    * @see Version#update()
@@ -37,32 +63,6 @@ public final class WhatIsNewInRuntime$Version
     Version testee = $$$();
 
     int result = testee.patch();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Version#interim()}.
-   * @since 10
-   * @see Version#interim()
-   */
-  public int interim()
-  {
-    Version testee = $$$();
-
-    int result = testee.interim();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Version#feature()}.
-   * @since 10
-   * @see Version#feature()
-   */
-  public int feature()
-  {
-    Version testee = $$$();
-
-    int result = testee.feature();
     return result;
   }
 

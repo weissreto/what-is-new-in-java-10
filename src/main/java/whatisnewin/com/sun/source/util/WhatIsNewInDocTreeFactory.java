@@ -1,10 +1,10 @@
 package whatisnewin.com.sun.source.util;
 
 import com.sun.source.util.DocTreeFactory;
-import com.sun.source.doctree.DocTypeTree;
 import com.sun.source.doctree.DocCommentTree;
 import java.util.List;
 import com.sun.source.doctree.DocTree;
+import com.sun.source.doctree.DocTypeTree;
 import com.sun.source.doctree.SummaryTree;
 
 /**
@@ -20,19 +20,6 @@ import com.sun.source.doctree.SummaryTree;
 public final class WhatIsNewInDocTreeFactory
 {
   /**
-   * Example call to new method {@link DocTreeFactory#newDocTypeTree(String)}.
-   * @since 10
-   * @see DocTreeFactory#newDocTypeTree(String)
-   */
-  public DocTypeTree newDocTypeTree(String text)
-  {
-    DocTreeFactory testee = $$$();
-
-    DocTypeTree result = testee.newDocTypeTree(text);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link DocTreeFactory#newDocCommentTree(List, List, List, List)}.
    * @since 10
    * @see DocTreeFactory#newDocCommentTree(List, List, List, List)
@@ -42,6 +29,19 @@ public final class WhatIsNewInDocTreeFactory
     DocTreeFactory testee = $$$();
 
     DocCommentTree result = testee.newDocCommentTree(fullBody, tags, preamble, postamble);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link DocTreeFactory#newDocTypeTree(String)}.
+   * @since 10
+   * @see DocTreeFactory#newDocTypeTree(String)
+   */
+  public DocTypeTree newDocTypeTree(String text)
+  {
+    DocTreeFactory testee = $$$();
+
+    DocTypeTree result = testee.newDocTypeTree(text);
     return result;
   }
 
